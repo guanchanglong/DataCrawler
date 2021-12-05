@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.SpotDao">
+
+    <resultMap id="spotMap" type="com.entity.Spot">
+        <id property="id" column="id" />
+        <result property="name" column="name"/>
+        <result property="spotWebId" column="spot_web_id"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="spotMap">
+        select id,name,spot_web_id from t_spot;
+    </select>
+
+    <insert id="insertSpotData" parameterType="com.entity.Spot">
+        insert into t_spot(name,area,info,picture,price,spot_web_id) values(#{spot.name},#{spot.area},#{spot.info},#{spot.picture},#{spot.price},#{spot.spotWebId});
+    </insert>
+
+    <update id="updateSpot" parameterType="com.entity.Spot">
+        update t_spot set info_detail = #{spot.infoDetail},open_time = #{spot.openTime} where id = #{id};
+    </update>
+
+    <select id="findAllById" resultType="com.entity.Spot">
+        select id,name,spot_web_id from t_spot where id = #{id};
+    </select>
+
+    <select id="findAllByWebId" resultType="com.entity.Spot">
+        select spot_web_id from t_spot where spot_web_id = #{webId};
+    </select>
+
+    <select id="countNotNullNum" resultType="int">
+        select COUNT(info_detail) from t_spot;
+    </select>
+
+</mapper>

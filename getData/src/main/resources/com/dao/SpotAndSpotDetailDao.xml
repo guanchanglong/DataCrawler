@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.SpotAndSpotDetailDao">
+
+    <insert id="saveRelation">
+        insert into t_spot_and_spot_detail(id,spot_id,spot_detail_id) values(#{id},#{spotId},#{spotDetailId});
+    </insert>
+
+    <select id="countNotNullNum" resultType="int">
+        select COUNT(*) from t_spot_and_spot_detail;
+    </select>
+
+</mapper>
