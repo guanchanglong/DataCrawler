@@ -23,4 +23,5 @@ public class CodeTransition {
     public static void main(String[] args){
         System.out.println(stringToASCII("西安"));
     }
+
 }

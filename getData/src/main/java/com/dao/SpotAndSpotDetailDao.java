@@ -10,4 +10,5 @@ public interface SpotAndSpotDetailDao {
     void saveRelation(@Param("id")int id,@Param("spotId") int spotId, @Param("spotDetailId") int spotDetailId);
 
     int countNotNullNum();
+
 }

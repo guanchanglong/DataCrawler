@@ -144,4 +144,5 @@ public class Spot {
                 ", spotWebId='" + spotWebId + '\'' +
                 '}';
     }
+
 }

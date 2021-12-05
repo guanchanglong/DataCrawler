@@ -10,5 +10,4 @@
         insert into t_spot_detail(title,info,picture) values(#{spotDetail.title},#{spotDetail.info},#{spotDetail.picture});
     </insert>
 
-
 </mapper>

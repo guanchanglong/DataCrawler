@@ -12,5 +12,4 @@
     <select id="countNotNullNum" resultType="int">
         select COUNT(*) from t_spot_and_spot_detail;
     </select>
-
 </mapper>

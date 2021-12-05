@@ -21,4 +21,5 @@ public interface SpotDao {
     Spot findAllByWebId(@Param("webId")String webId);
 
     int countNotNullNum();
+
 }

@@ -12,4 +12,5 @@ public class SpotAndSpotDetail {
     private int spotId;
     //SpotDetail的Id
     private int spotDetailId;
+
 }

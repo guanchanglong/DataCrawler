@@ -124,7 +124,6 @@ public class Test {
         session.commit();
     }
 
-
     public static void main(String[] args) {
 
         //爬取景点简介数据

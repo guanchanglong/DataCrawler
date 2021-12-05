@@ -57,4 +57,5 @@ public class SpotDetail {
                 ", picture='" + picture + '\'' +
                 '}';
     }
+
 }

@@ -9,4 +9,5 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface SpotDetailDao {
     void insertSpotDetailData(@Param("spotDetail") SpotDetail spotDetail);
+
 }
